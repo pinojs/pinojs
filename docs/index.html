@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🌲 Pino Logger</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/kube/6.0.1/css/kube.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"
+          defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/kube/6.0.1/js/kube.min.js" defer></script>
+</head>
+<body class="row centered">
+  <header class="col col-8">
+    <h1 class="logo">Pino 🌲</h1>
+    <h3 class="subheading muted">the super fast, all natural JSON logger</h3>
+  </header>
+
+  <main class="col col-8">
+    <p>
+      <a href="https://npm.im/pino">Pino</a> is an extremely fast node.js logger, inspired by
+      <a href="https://npm.im/bunyan">Bunyan</a>. Logging is a necessity, but it shouldn't be
+      what your appliction spends all of its time doing. When you use Pino for your logger
+      you save orders of magnitude more time than with other loggers:
+    </p>
+
+    <div class="row centered sample">
+      <samp>
+        logger.info('hello %s %j %d', 'world', {obj: true}, 4, {another: 'obj'})<br><br>
+        benchDebug*10000: 640.001ms<br>
+        benchBunyan*10000: 2888.825ms<br>
+        benchWinston*10000: 2616.285ms<br>
+        benchBole*10000: 1313.470ms<br>
+        benchLogLevel*10000: 1487.610ms<br>
+        <mark class="bold">benchPino*10000: 486.367ms</mark>
+      </samp>
+    </div>
+
+    <p>
+      Getting started with Pino is easy. Just <code>npm install --save pino</code>
+      and start writing:
+    </p>
+
+    <div class="row centered sample">
+      <pre><code>
+        var pino = require('pino')
+        var log = pino({level: 'debug'})
+
+        log.info('a simple info message')
+        log.debug('interesting object: %j', {foo: 'bar', pino: 'is a way of life'})
+      </code></pre>
+    </div>
+  </main>
+
+</body>
+</html>

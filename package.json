@@ -1,0 +1,29 @@
+{
+  "name": "pinojs",
+  "version": "1.0.0",
+  "description": "pino.io source",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinojs/pinojs.git"
+  },
+  "keywords": [
+    "pino"
+  ],
+  "author": "James Sumners <james.sumners@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pinojs/pinojs/issues"
+  },
+  "homepage": "https://github.com/pinojs/pinojs#readme",
+  "dependencies": {
+    "live-server": "^1.1.0"
+  }
+}
